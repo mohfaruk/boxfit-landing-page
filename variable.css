@@ -1,0 +1,18 @@
+:root {
+    --very-dark-gray: hsl(0, 0%, 41%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+
+
+    --f-josefin-sans: "Josefin Sans", sans-serif;
+    --ff-alata: "Alata", sans-serif;
+    --fs-h1: 4.7em;
+    --fs-h2: 3.2em;
+    --fs-h3: 2.1em;
+    --fs-regular: 15px;
+    --fw-300: 300;
+
+    --px: 165px; /*  padding left & padding right  */
+    --mb: 70px; /* margin bottom */
+}

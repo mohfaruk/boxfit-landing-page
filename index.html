@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Box&Burn Home Page</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-brand">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <nav class="navbar-nav">
+            <!-- navbar nav brand for mobile -->
+
+            <div class="mobile-nav-brand">
+              <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+              <div class="close-btn">
+                <img
+                  src="./images/icon-close.svg"
+                  alt="close-btn"
+                  id="close-btn"
+                />
+              </div>
+            </div>
+
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Coaching</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="nav-toggle">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="icon-hamburger"
+              id="open-btn"
+            />
+          </div>
+        </div>
+
+        <section class="banner">
+          <h1><i>"champions are made in the ring"</i></h1>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="interactive">
+        <div class="img-box">
+          <img
+            class="about-image"
+            src="./images/desktop/about-image.jpg"
+            alt="interactive"
+          />
+          <div class="content-box">
+            <h2>have the time of your life getting into fighting shape</h2>
+            <p>
+              Founded in 2015, Box&Burn has been innovating the boxfit space
+              throughout the United Kingdom. Their award-winning programmes led
+              by some of the best boxing coaches in the country have transformed
+              the fitness industry, proving you can enjoy a social workout
+              session whilst working towards your goals.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="content">
+        <section class="header">
+          <h2>our programmes</h2>
+        </section>
+        <div class="grid-item">
+          <div class="item">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/mobile/image-deep-earth.jpg"
+              />
+              <source
+                media="(min-width: 577px)"
+                srcset="./images/desktop/image-deep-earth.jpg"
+              />
+              <img
+                src="./images/desktop/image-deep-earth.jpg"
+                alt="image-deep-earth"
+              />
+            </picture>
+            <h3>boxfit group sessions</h3>
+          </div>
+
+          <div class="item">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/mobile/image-night-arcade.jpg"
+              />
+              <source
+                media="(min-width: 577px)"
+                srcset="./images/desktop/image-night-arcade.jpg"
+              />
+              <img
+                src="./images/desktop/image-night-arcade.jpg"
+                alt="image-night-arcade"
+              />
+            </picture>
+            <h3>fight club drills</h3>
+          </div>
+
+          <div class="item">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/mobile/image-soccer-team.jpg"
+              />
+              <source
+                media="(min-width: 577px)"
+                srcset="./images/desktop/image-soccer-team.jpg"
+              />
+              <img
+                src="./images/desktop/image-soccer-team.jpg"
+                alt="image-soccer-team"
+              />
+            </picture>
+            <h3>white collar training</h3>
+          </div>
+
+          <div class="item">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/mobile/image-grid.jpg"
+              />
+              <source
+                media="(min-width: 577px)"
+                srcset="./images/desktop/image-grid.jpg"
+              />
+              <img src="./images/desktop/image-grid.jpg" alt="image-grid" />
+            </picture>
+            <h3>strength and conditioning</h3>
+          </div>
+
+          <div class="item">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/mobile/image-from-above.jpg"
+              />
+              <source
+                media="(min-width: 577px)"
+                srcset="./images/desktop/image-from-above.jpg"
+              />
+              <img
+                src="./images/desktop/image-from-above.jpg"
+                alt="image-from-above"
+              />
+            </picture>
+            <h3>one-to-one coaching</h3>
+          </div>
+        </div>
+
+        <a href="#" class="btn-summary">summary</a>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-flex">
+          <div class="footer-left">
+            <div class="footer-brand">
+              <a href=""><img src="./images/logo.svg" alt="logo" /></a>
+            </div>
+
+            <div class="footer-nav">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-link">
+              <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+              <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+              <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
+            </div>
+
+            <div class="text-footer">
+              <p>@2022 Box&Burn. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const navbar_nav = document.querySelector(".navbar-nav");
+      const hamburger = document.querySelector("#open-btn");
+      const close_btn = document.querySelector("#close-btn");
+
+      const navbarToggle = () => navbar_nav.classList.toggle("active");
+      hamburger.addEventListener("click", navbarToggle);
+      close_btn.addEventListener("click", navbarToggle);
+    </script>
+  </body>
+</html>
