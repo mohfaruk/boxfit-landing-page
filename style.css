@@ -76,7 +76,6 @@ nav ul li::after {
     height: 2px;
     transform: translateX(-50%);
     transition: ease-in-out .200s;
-
     background: var(--white);
 }
 
@@ -99,7 +98,6 @@ li a {
 .banner h1 {
     max-width: 650px;
     padding: 38px;
-
     color: var(--white);
     font-size: var(--fs-h1);
     border: 3px solid var(--white);
@@ -109,36 +107,36 @@ li a {
     padding-bottom: 100px;
 }
 
-.interactive {
+.about-us {
     position: relative;
+    left: 10%;
     margin-bottom: var(--mb);
 }
 
-.interactive .img-box img {
+.about-us .img-box img {
     display: block;
     height: 30%;
     width: 30%;
 }
 
-.interactive .content-box {
+.about-us .content-box {
     position: absolute;
-    bottom: 50%;
+    bottom: 30%;
     left: 30%;
     padding: 60px 0 0px 60px;
     max-width: 640px;
     background: var(--white);
 }
 
-.interactive .content-box h2 {
+.about-us .content-box h2 {
     font-size: var(--fs-h2);
     font-weight: var(--fw-300);
     margin-bottom: 30px
 }
 
-.interactive .content-box p {
+.about-us .content-box p {
     font-size: var(--fs-regular);
     color: var(--very-dark-gray);
-
     line-height: 1.5rem;
 }
 
@@ -157,27 +155,23 @@ li a {
     font-size: var(--fs-h2);
     color: var(--black);
     font-weight: var(--fw-300);
-
 }
 
 .item {
     position: relative;
     cursor: pointer;
     height: 450px;
-
 }
 
 .item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 .item::after {
     content: '';
-
-
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, transparent 40%, #000b);
@@ -192,7 +186,6 @@ li a {
     color: var(--white);
     position: absolute;
     bottom: 35px;
-
     left: 40px;
     z-index: 5;
     max-width: 200px;
@@ -203,15 +196,13 @@ li a {
 }
 
 .btn-summary {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    padding: 8px 35px;
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
     letter-spacing: 5px;
     border: 3px solid var(--black);
     color: var(--black);
-
-    transition: ease-in-out .125s;
+    transition: ease-in-out .3s;
 }
 
 .btn-summary:hover {
@@ -221,11 +212,11 @@ li a {
 
 .content {
     position: relative;
+    margin-bottom: var(--mb);
 }
 
 footer {
     background: var(--black);
-
 }
 
 footer p {
@@ -268,46 +259,44 @@ footer p {
     margin-bottom: 20px;
 }
 
-
-
-
 /* responsive for large desktop screen */
 
 
 @media screen and (max-width: 1200px) {
 
-    /* interactive */
+    /* about section */
 
-
-    .interactive .img-box img {
-        width: 100%;
+    .about-us {
+        left: 0;
     }
 
-    .interactive .img-box .content-box {
+    .about-us .img-box img {
+        margin: auto;
+        width: 50%;
+    }
+
+    .about-us .img-box .content-box {
         position: static;
         text-align: center;
-        left: 0;
+        /* left: 0; */
         max-width: 100%;
         padding: 60px 10px;
+    }
+
+    .item {
+        margin: 20px;
     }
 
     /* --content */
     .header h2 {
         text-align: center;
-
     }
 
     .btn-summary {
-        position: static;
         display: block;
         width: max-content;
         margin: auto;
-        margin-top: 50px;
     }
-
-
-
-
 }
 
 
@@ -331,7 +320,6 @@ footer p {
         top: 40px;
         justify-content: space-between;
         align-items: center;
-
     }
 
     .mobile-nav-brand img {
@@ -340,7 +328,6 @@ footer p {
 
     .navbar-nav {
         position: fixed;
-
         top: 0;
         left: -100%;
         width: 100%;
@@ -404,15 +391,12 @@ footer p {
         margin-bottom: 30px;
     }
 
-
-
 }
 
 @media screen and (min-width: 992px) {
     .mobile-nav-brand {
         display: none;
         cursor: pointer;
-
     }
 
     .nav-toggle {
@@ -432,7 +416,6 @@ footer p {
 
         --px: 120px;
         --mb: 120px;
-
     }
 
 
@@ -464,10 +447,9 @@ footer p {
 
     /* content */
 
-    .item {
+    /* .item {
         height: 117px;
-    }
-
+    } */
 
     /* footer for responsive mobile*/
 
