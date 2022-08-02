@@ -1,244 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Box&Burn Home Page</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <div class="navbar-brand">
-            <img src="./images/logo.svg" alt="logo" />
-          </div>
-          <nav class="navbar-nav">
-            <!-- navbar nav brand for mobile -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>Box&Burn Home Page</title>
+</head>
 
-            <div class="mobile-nav-brand">
-              <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
-              <div class="close-btn">
-                <img
-                  src="./images/icon-close.svg"
-                  alt="close-btn"
-                  id="close-btn"
-                />
-              </div>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-brand">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <nav class="navbar-nav">
+          <!-- navbar nav brand for mobile -->
+
+          <div class="mobile-nav-brand">
+            <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+            <div class="close-btn">
+              <img src="./images/icon-close.svg" alt="close-btn" id="close-btn" />
             </div>
+          </div>
 
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Programmes</a></li>
+            <li><a href="#">Timetable</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-toggle">
+          <img src="./images/icon-hamburger.svg" alt="icon-hamburger" id="open-btn" />
+        </div>
+      </div>
+
+      <section class="banner">
+        <h1><i>"champions are made in the ring"</i></h1>
+      </section>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="about-us">
+      <div class="img-box">
+        <img class="about-image" src="./images/desktop/about-image.jpg" alt="about-us" />
+        <div class="content-box">
+          <h2>Box&Burn | Boxing Classes</h2>
+          <p>
+            At Box&Burn our mission is to provide provide the best
+            boxing classes on offer. We eat, sleep and breathe boxing
+            and we want to share our passion for boxing with the public.
+            For this reason we have tailored our classes so everyone
+            can have the time of their lives getting into fighting shape!
+            <br>
+            <br>
+            We offer an extensive range of programmes providing a mixture
+            of solid self-defence coaching, and strength & conditioning to
+            ensure your time in our gym is always enjoyable. If that isn't
+            enough, we also provide personal coaching and nutritional
+            guidance so you have access to the necessary resources to become
+            the best version of yourself. It is for these reasons Box&Burn has
+            been innovating the boxfit space throughout the United Kingdom.
+            Their award-winning programmes led by some of the best boxing
+            coaches in the country have transformed the fitness industry,
+            proving you can enjoy a social workout session whilst working
+            towards your goals.
+            <br>
+            <br>
+            <br>
+            <br>
+            <i>"Love everything about Box&Burn. I've been going for three years
+              strong now. Seriously check it out if you want to challenge yourself!"</i>
+            <br>
+            <br>
+            <div class="move-right"><i>Rebecca</i></div>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section class="content">
+      <section class="header">
+        <h2>our programmes</h2>
+      </section>
+
+      <div class="grid-item">
+
+        <div class="item">
+          <picture>
+            <source media="(max-width: 576px)" srcset="./images/desktop/boxfit.jpg" />
+            <source media="(min-width: 577px)" srcset="./images/desktop/boxfit.jpg" />
+            <img src="./images/desktop/boxfit.jpg" alt="image-boxfit" />
+          </picture>
+          <h3>boxfit group sessions</h3>
+          <a href="#" class="btn-summary">Book With Us</a>
+        </div>
+
+        <div class="item">
+          <picture>
+            <source media="(max-width: 576px)" srcset="./images/desktop/fight-club.jpg" />
+            <source media="(min-width: 577px)" srcset="./images/desktop/fight-club.jpg" />
+            <img src="./images/desktop/fight-club.jpg" alt="image-fight-club" />
+          </picture>
+          <h3>fight club drills</h3>
+          <a href="#" class="btn-summary">Book With Us</a>
+        </div>
+
+        <div class="item">
+          <picture>
+            <source media="(max-width: 576px)" srcset="./images/desktop/white-collar-boxing.jpg" />
+            <source media="(min-width: 577px)" srcset="./images/desktop/white-collar-boxing.jpg" />
+            <img src="./images/desktop/white-collar-boxing.jpg" alt="image-white-training" />
+          </picture>
+          <h3>white collar training</h3>
+          <a href="#" class="btn-summary">Book With Us</a>
+        </div>
+
+        <div class="item">
+          <picture>
+            <source media="(max-width: 576px)" srcset="./images/desktop/strength-and-condition.jpg" />
+            <source media="(min-width: 577px)" srcset="./images/desktop/strength-and-condition.jpg" />
+            <img src="./images/desktop/strength-and-condition.jpg" alt="image-s&c" />
+          </picture>
+          <h3>strength and conditioning</h3>
+          <a href="#" class="btn-summary">Book With Us</a>
+        </div>
+
+        <div class="item">
+          <picture>
+            <source media="(max-width: 576px)" srcset="./images/desktop/one-to-one.jpg" />
+            <source media="(min-width: 577px)" srcset="./images/desktop/one-to-one.jpg" />
+            <img src="./images/desktop/one-to-one.jpg" alt="image-one-to-one" />
+          </picture>
+          <h3>one-to-one coaching</h3>
+          <a href="#" class="btn-summary">Book With Us</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="container">
+    <section class="content">
+      <section class="header">
+        <h2>timetable</h2>
+      </section>
+      <div class="timetable">
+        <table>
+          <thead>
+            <th scope="col">Time</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+          </thead>
+          <tbody>
+            <tr class="bg-pink">
+              <th scope="row">12pm - 2pm</th>
+              <td><span>Fight Club</span></td>
+              <td><span>Fight Club</span></td>
+              <td><span>Fight Club</span></td>
+              <td><span>Fight Club</span></td>
+              <td><span>Fight Club</span></td>
+            </tr>
+            <tr>
+              <th scope="row">5pm - 6pm</th>
+              <td><span class="bg-green">Boxfit</span></td>
+              <td><span class="bg-blue">Strength and Conditioning</span></td>
+              <td><span class="bg-green">Boxfit</span></td>
+              <td><span class="bg-blue">Strength and Conditioning</span></td>
+              <td><span class="bg-green">Boxfit</span></td>
+            </tr>
+            <tr>
+              <th scope="row">6pm - 7pm</th>
+              <td><span class="bg-grey">White Collar Boxing</span></td>
+              <td><span class="bg-grey">White Collar Boxing</span></td>
+              <td><span class="bg-blue">Strength and Conditioning</span></td>
+              <td><span class="bg-grey">White Collar Boxing</span></td>
+              <td><span class="bg-green">Boxfit</span></td>
+            </tr>
+            <tr>
+              <th scope="row">7pm - 8pm</th>
+              <td><span class="bg-green">Boxfit</span></td>
+              <td><span class="bg-blue">Strength and Conditioning</span></td>
+              <td><span class="bg-green">Boxfit</span></td>
+              <td><span class="bg-blue">Strength and Conditioning</span></td>
+              <td><span class="bg-grey">White Collar Boxing</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-flex">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <a href=""><img src="./images/logo.svg" alt="logo" /></a>
+          </div>
+
+          <div class="footer-nav">
             <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">Programmes</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="#">Timetable</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-          </nav>
-          <div class="nav-toggle">
-            <img
-              src="./images/icon-hamburger.svg"
-              alt="icon-hamburger"
-              id="open-btn"
-            />
           </div>
         </div>
 
-        <section class="banner">
-          <h1><i>"champions are made in the ring"</i></h1>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section class="about-us">
-        <div class="img-box">
-          <img
-            class="about-image"
-            src="./images/desktop/about-image.jpg"
-            alt="about-us"
-          />
-          <div class="content-box">
-            <h2>Box&Burn | Boxing Classes</h2>
-            <p>
-              At Box&Burn our mission is to provide provide the best 
-              boxing classes on offer. We eat, sleep and breathe boxing 
-              and we want to share our passion for boxing with the public.
-              For this reason we have tailored our classes so everyone 
-              can have the time of their lives getting into fighting shape!
-              <br>
-              <br>
-              We offer an extensive range of programmes providing a mixture 
-              of solid self-defence coaching, and strength & conditioning to 
-              ensure your time in our gym is always enjoyable. If that isn't
-              enough, we also provide personal coaching and nutritional 
-              guidance so you have access to the necessary resources to become 
-              the best version of yourself. It is for these reasons Box&Burn has 
-              been innovating the boxfit space throughout the United Kingdom. 
-              Their award-winning programmes led by some of the best boxing 
-              coaches in the country have transformed the fitness industry,
-              proving you can enjoy a social workout session whilst working 
-              towards your goals.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="container">
-      <section class="content">
-        <section class="header">
-          <h2>our programmes</h2>
-        </section>
-        
-        <div class="grid-item">
-          
-          <div class="item">
-            <picture>
-              <source
-                media="(max-width: 576px)"
-                srcset="./images/desktop/boxfit.jpg"
-              />
-              <source
-                media="(min-width: 577px)"
-                srcset="./images/desktop/boxfit.jpg"
-              />
-              <img src="./images/desktop/boxfit.jpg" alt="image-boxfit" />
-            </picture>
-            <h3>boxfit group sessions</h3>
-            <a href="#" class="btn-summary">Book With Us</a>
-          </div>
-          
-          <div class="item">
-            <picture>
-              <source
-                media="(max-width: 576px)"
-                srcset="./images/desktop/fight-club.jpg"
-              />
-              <source
-                media="(min-width: 577px)"
-                srcset="./images/desktop/fight-club.jpg"
-              />
-              <img
-                src="./images/desktop/fight-club.jpg"
-                alt="image-fight-club"
-              />
-            </picture>
-            <h3>fight club drills</h3>
-            <a href="#" class="btn-summary">Book With Us</a>
+        <div class="footer-right">
+          <div class="footer-link">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
           </div>
 
-          <div class="item">
-            <picture>
-              <source
-                media="(max-width: 576px)"
-                srcset="./images/desktop/white-collar-boxing.jpg"
-              />
-              <source
-                media="(min-width: 577px)"
-                srcset="./images/desktop/white-collar-boxing.jpg"
-              />
-              <img
-                src="./images/desktop/white-collar-boxing.jpg"
-                alt="image-white-training"
-              />
-            </picture>
-            <h3>white collar training</h3>
-            <a href="#" class="btn-summary">Book With Us</a>
-          </div>
-
-          <div class="item">
-            <picture>
-              <source
-                media="(max-width: 576px)"
-                srcset="./images/desktop/strength-and-condition.jpg"
-              />
-              <source
-                media="(min-width: 577px)"
-                srcset="./images/desktop/strength-and-condition.jpg"
-              />
-              <img
-                src="./images/desktop/strength-and-condition.jpg"
-                alt="image-s&c"
-              />
-            </picture>
-            <h3>strength and conditioning</h3>
-            <a href="#" class="btn-summary">Book With Us</a>
-          </div>
-
-          <div class="item">
-            <picture>
-              <source
-                media="(max-width: 576px)"
-                srcset="./images/desktop/one-to-one.jpg"
-              />
-              <source
-                media="(min-width: 577px)"
-                srcset="./images/desktop/one-to-one.jpg"
-              />
-              <img
-                src="./images/desktop/one-to-one.jpg"
-                alt="image-one-to-one"
-              />
-            </picture>
-            <h3>one-to-one coaching</h3>
-            <a href="#" class="btn-summary">Book With Us</a>
-          </div>
-        </div>
-
-      </section>
-    </div>
-
-    <div class="container">
-      <section class="content">
-        <section class="header">
-          <h2>Upcoming Events</h2>
-        </section>
-        <div class="events"></div>
-    </div>
-
-    <footer>
-      <div class="container">
-        <div class="footer-flex">
-          <div class="footer-left">
-            <div class="footer-brand">
-              <a href=""><img src="./images/logo.svg" alt="logo" /></a>
-            </div>
-
-            <div class="footer-nav">
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Programmes</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="footer-right">
-            <div class="footer-link">
-              <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
-              <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
-              <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
-            </div>
-
-            <div class="text-footer">
-              <p>@2022 Box&Burn. All rights reserved.</p>
-            </div>
+          <div class="text-footer">
+            <p>@2022 Box&Burn. All rights reserved.</p>
           </div>
         </div>
       </div>
-    </footer>
-    <script>
-      const toggle = document.querySelector(".nav-toggle");
-      const navbar_nav = document.querySelector(".navbar-nav");
-      const hamburger = document.querySelector("#open-btn");
-      const close_btn = document.querySelector("#close-btn");
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const navbar_nav = document.querySelector(".navbar-nav");
+    const hamburger = document.querySelector("#open-btn");
+    const close_btn = document.querySelector("#close-btn");
 
-      const navbarToggle = () => navbar_nav.classList.toggle("active");
-      hamburger.addEventListener("click", navbarToggle);
-      close_btn.addEventListener("click", navbarToggle);
-    </script>
-  </body>
+    const navbarToggle = () => navbar_nav.classList.toggle("active");
+    hamburger.addEventListener("click", navbarToggle);
+    close_btn.addEventListener("click", navbarToggle);
+  </script>
+</body>
+
 </html>

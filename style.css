@@ -24,7 +24,9 @@ a {
     /* color: var(--white); */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--ff-josefin-sans);
     font-weight: var(--fw-300);
     letter-spacing: 1px;
@@ -121,7 +123,7 @@ li a {
 
 .about-us .content-box {
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
     left: 30%;
     padding: 60px 0 0px 60px;
     max-width: 640px;
@@ -134,10 +136,15 @@ li a {
     margin-bottom: 30px
 }
 
-.about-us .content-box p {
+.about-us .content-box p,
+.move-right {
     font-size: var(--fs-regular);
     color: var(--very-dark-gray);
     line-height: 1.5rem;
+}
+
+.move-right {
+    text-align: right;
 }
 
 .grid-item {
@@ -215,6 +222,54 @@ li a {
     margin-bottom: var(--mb);
 }
 
+.timetable {
+    margin: auto;
+    /* width: 60%; */
+    font-size: 1.4rem;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    vertical-align: top;
+    padding: 0.75rem;
+}
+
+td {
+    font-family: 'Caveat Brush', cursive;
+    /* font-size: 1.5rem; */
+    border: 3px solid;
+    min-width: 10rem;
+}
+
+thead th {
+    border-right: 3px solid;
+}
+
+tbody th {
+    border-top: 3px solid;
+}
+
+ .bg-blue {
+    background-color: #89CFF0;
+}
+
+.bg-pink td span {
+    background-color: #FF92A5;
+}
+
+.bg-green {
+    background-color: #AFE1AF;
+} 
+
+.bg-grey {
+    background-color: #D3D3D3;
+}
+
 footer {
     background: var(--black);
 }
@@ -280,7 +335,7 @@ footer p {
         text-align: center;
         /* left: 0; */
         max-width: 100%;
-        padding: 60px 10px;
+        padding: 40px 10px 0 10px;
     }
 
     .item {
@@ -343,8 +398,6 @@ footer p {
     .active {
         left: 0;
     }
-
-
 
     .navbar-nav ul {
         grid-template-columns: 1fr;
@@ -444,12 +497,6 @@ footer p {
     header {
         margin-bottom: var(--mb);
     }
-
-    /* content */
-
-    /* .item {
-        height: 117px;
-    } */
 
     /* footer for responsive mobile*/
 
