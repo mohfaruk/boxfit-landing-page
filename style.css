@@ -21,7 +21,9 @@ a {
     display: inline-block;
     cursor: pointer;
     font-size: var(--fs-regular);
-    /* color: var(--white); */
+    white-space: nowrap;
+    color: var(--white);
+    letter-spacing: 1.2px;
 }
 
 h1,
@@ -41,7 +43,6 @@ h1 {
 .container {
     max-width: 1440px;
     margin: auto var(--px);
-    /* border: red 2px solid; */
 }
 
 header {
@@ -85,9 +86,9 @@ nav ul li:hover::after {
     width: 30px;
 }
 
-li a {
+/* li a {
     color: var(--white);
-}
+} */
 
 .nav-toggle {
     cursor: pointer;
@@ -162,6 +163,7 @@ li a {
     font-size: var(--fs-h2);
     color: var(--black);
     font-weight: var(--fw-300);
+    text-align: center;
 }
 
 .item {
@@ -204,12 +206,15 @@ li a {
 
 .btn-summary {
     display: block;
+    width: max-content;
     text-align: center;
     padding: 8px 10px;
     letter-spacing: 5px;
     border: 3px solid var(--black);
     color: var(--black);
     transition: ease-in-out .3s;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .btn-summary:hover {
@@ -254,21 +259,54 @@ tbody th {
     border-top: 3px solid;
 }
 
- .bg-blue {
-    background-color: #89CFF0;
+.bg-black td span {
+    background-color: #2E2E2E;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1.4px;
 }
 
-.bg-pink td span {
-    background-color: #FF92A5;
+/* Contact Section */
+
+
+#contact  {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.bg-green {
-    background-color: #AFE1AF;
-} 
-
-.bg-grey {
-    background-color: #D3D3D3;
+#contact .form .field textarea {
+    margin-bottom: 3em;
 }
+
+#contact .form .g-recaptcha {
+    display: inline-block;
+}
+
+#contact .form input[type=text],
+#contact .form input[type=email],
+#contact .form textarea {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #bbb;
+    padding: 14px;
+    margin-bottom: .8em;
+    width: 60%;
+}
+
+#contact .form ::placeholder {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 2;
+}
+
+.section-info {
+    font-size: var(--fs-regular);
+    color: var(--very-dark-gray);
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+/* footer */
 
 footer {
     background: var(--black);
@@ -313,6 +351,8 @@ footer p {
 .text-footer {
     margin-bottom: 20px;
 }
+
+
 
 /* responsive for large desktop screen */
 

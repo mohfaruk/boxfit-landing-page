@@ -1,9 +1,9 @@
- - Include call to action in banner 
-   or just beneath (what you want visitors to do - see programmes, purchase)
- 
- - Fix responsiveness, especially with timetable
+ - Include call to action in banner - check programmes
+
+ - Fix responsiveness for all sections
 
  - Remove hover change colour on programmes
  
+ - Add border around review (about us)
 
 
