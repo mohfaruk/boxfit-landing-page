@@ -1,9 +1,5 @@
  - Include call to action in banner - check programmes
 
- - Fix responsiveness for all sections
-
  - Remove hover change colour on programmes
- 
- - Add border around review (about us)
 
 

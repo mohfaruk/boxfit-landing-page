@@ -1,15 +1,18 @@
 @import url('./variable.css');
 
+/* Utilities */
 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* overflow-x:hidden; */
 }
 
-html {
+html, body {
+    overflow-x:hidden;
     font-family: var(--ff-alata);
     font-size: var(--fs-regular);
-
 }
 
 li {
@@ -33,11 +36,21 @@ h3 {
     font-weight: var(--fw-300);
     letter-spacing: 1px;
     text-transform: uppercase;
-
 }
 
 h1 {
     font-size: clamp(var(--fs-h1, 2.5vw, 16px));
+}
+
+.heading-title {
+    margin-bottom: 3em;
+}
+
+.heading-title h2 {
+    font-size: var(--fs-h2);
+    color: var(--black);
+    font-weight: var(--fw-300);
+    text-align: center;
 }
 
 .container {
@@ -45,10 +58,12 @@ h1 {
     margin: auto var(--px);
 }
 
+/* Header */
 header {
     background: #0008 url(./images/desktop/banner-image.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: multiply;
+    max-width: auto;
     margin-bottom: var(--mb);
 }
 
@@ -86,10 +101,6 @@ nav ul li:hover::after {
     width: 30px;
 }
 
-/* li a {
-    color: var(--white);
-} */
-
 .nav-toggle {
     cursor: pointer;
 }
@@ -110,6 +121,7 @@ nav ul li:hover::after {
     padding-bottom: 100px;
 }
 
+/* About Us */
 .about-us {
     position: relative;
     left: 10%;
@@ -124,7 +136,7 @@ nav ul li:hover::after {
 
 .about-us .content-box {
     position: absolute;
-    bottom: 10%;
+    bottom: 2%;
     left: 30%;
     padding: 60px 0 0px 60px;
     max-width: 640px;
@@ -138,32 +150,28 @@ nav ul li:hover::after {
 }
 
 .about-us .content-box p,
-.move-right {
+.move-right, .review {
     font-size: var(--fs-regular);
     color: var(--very-dark-gray);
     line-height: 1.5rem;
+}
+
+.review {
+    padding: 18px;
+    border: 1.5px solid var(--dark-gray);
 }
 
 .move-right {
     text-align: right;
 }
 
+
+/* Programmes */
 .grid-item {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 30px;
     place-content: center;
-}
-
-.header {
-    margin-bottom: var(--mb);
-}
-
-.header h2 {
-    font-size: var(--fs-h2);
-    color: var(--black);
-    font-weight: var(--fw-300);
-    text-align: center;
 }
 
 .item {
@@ -227,6 +235,7 @@ nav ul li:hover::after {
     margin-bottom: var(--mb);
 }
 
+/* Timetable */
 .timetable {
     margin: auto;
     /* width: 60%; */
@@ -246,7 +255,6 @@ td {
 
 td {
     font-family: 'Caveat Brush', cursive;
-    /* font-size: 1.5rem; */
     border: 3px solid;
     min-width: 10rem;
 }
@@ -267,9 +275,7 @@ tbody th {
 }
 
 /* Contact Section */
-
-
-#contact  {
+#contact {
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -306,8 +312,7 @@ tbody th {
     margin-bottom: 3em;
 }
 
-/* footer */
-
+/* Footer */
 footer {
     background: var(--black);
 }
@@ -352,15 +357,11 @@ footer p {
     margin-bottom: 20px;
 }
 
+/* Responsive for large desktop screen */
 
+@media screen and (max-width: 1630px) {
 
-/* responsive for large desktop screen */
-
-
-@media screen and (max-width: 1200px) {
-
-    /* about section */
-
+    /* About Us */
     .about-us {
         left: 0;
     }
@@ -373,7 +374,6 @@ footer p {
     .about-us .img-box .content-box {
         position: static;
         text-align: center;
-        /* left: 0; */
         max-width: 100%;
         padding: 40px 10px 0 10px;
     }
@@ -382,8 +382,8 @@ footer p {
         margin: 20px;
     }
 
-    /* --content */
-    .header h2 {
+    /* Content */
+    .heading-title h2 {
         text-align: center;
     }
 
@@ -394,8 +394,7 @@ footer p {
     }
 }
 
-
-/* medium desktop screen */
+/* Medium desktop screen */
 
 @media screen and (max-width: 992px) {
     :root {
@@ -406,7 +405,7 @@ footer p {
         --mb: 120px;
     }
 
-    /* header for mobile */
+    /* Header */
     .mobile-nav-brand {
         display: flex;
         position: absolute;
@@ -418,7 +417,7 @@ footer p {
     }
 
     .mobile-nav-brand img {
-        max-width: 145px;
+        max-width: auto;
     }
 
     .navbar-nav {
@@ -460,7 +459,12 @@ footer p {
         bottom: 20px;
     }
 
-    /* footer */
+    /* Timetable */
+    .timetable {
+        font-size: 1rem;
+    }
+
+    /* Footer */
     .footer-flex {
         flex-direction: column;
         text-align: center;
@@ -504,18 +508,16 @@ footer p {
 @media screen and (max-width: 768px) {
 
     :root {
-        --fs-h1: 4em;
+        --fs-h1: 3.4em;
         --fs-h2: 2.8em;
-
         --px: 120px;
         --mb: 120px;
     }
 
-
-
-
     .banner h1 {
         padding: 22px;
+        border: hidden;
+
     }
 }
 
@@ -526,20 +528,11 @@ footer p {
     :root {
         --fs-h1: 2.3em;
         --fs-h2: 2em;
-
         --px: 30px;
         --mb: 50px;
     }
 
-
-    /* header */
-
-    header {
-        margin-bottom: var(--mb);
-    }
-
     /* footer for responsive mobile*/
-
     .footer-flex {
         flex-direction: column;
         text-align: center;
