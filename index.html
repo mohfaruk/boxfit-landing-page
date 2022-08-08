@@ -41,6 +41,11 @@
       <section class="banner">
         <h1><i>"champions are made in the ring"</i></h1>
       </section>
+      <div class="cta">
+        <a href="#" class="cta-button">Check Out Our Programmes</a>
+        <!-- <img src="./images/down-arrow.png" alt="down-arrow" id="down-arrow"/> -->
+      </div>
+      
     </div>
   </header>
 
@@ -267,6 +272,7 @@
     </div>
   </footer>
   <script>
+    //Hamburger Navbar
     const toggle = document.querySelector(".nav-toggle");
     const navbar_nav = document.querySelector(".navbar-nav");
     const hamburger = document.querySelector("#open-btn");
@@ -275,6 +281,13 @@
     const navbarToggle = () => navbar_nav.classList.toggle("active");
     hamburger.addEventListener("click", navbarToggle);
     close_btn.addEventListener("click", navbarToggle);
+
+    //Sticky Navbar
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".navbar");
+      navbar.classList.toggle("sticky", window.scrollY > 0)
+    })
+
   </script>
 </body>
 

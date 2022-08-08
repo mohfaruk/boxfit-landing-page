@@ -1,5 +1,3 @@
- - Include call to action in banner - check programmes
-
- - Remove hover change colour on programmes
-
-
+- Add arrow beneath cta text
+- Deploy website
+- Add readme document journaling progress/thoughts
