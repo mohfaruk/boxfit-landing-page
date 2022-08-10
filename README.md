@@ -18,41 +18,4 @@ The website still requires a payment feature to be included. I have limited know
 
 ## Deployment
 
-Website was deployed with vercel.
-
-## Get started
-
-From your command line, first clone this repo:
-
-# Clone this repository
-
-$ git clone https://github.com/mohfaruk/postal_website.git
-
-# Go into the repository
-
-$ cd material-ui-site
-
-# Remove current origin repository
-
-$ git remote remove origin
-Then you can install the dependencies using NPM:
-
-Using NPM:
-
-# Install dependencies
-
-$ npm install
-
-# Start development server
-
-$ npm start
-You should now have a development server running in your default browser.
-
-yarn build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
-
-See the section about deployment for more information.
+Website was deployed with Vercel.
