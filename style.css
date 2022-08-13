@@ -193,8 +193,9 @@ nav ul li:hover::after {
 }
 
 .cta-button:hover {
+    font-style: italic;
     color: var(--black);
-    background: var(--very-dark-gray);
+    background: var(--white);
 }
 
 /* Programmes */
@@ -296,10 +297,10 @@ tbody th {
 }
 
 .bg-black td span {
-    background-color: #2E2E2E;
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=2E2E2E);
+    margin: -2px -6px;
+    padding:  8px  7px;
     color: #fff;
-    border-radius: 4px;
-    padding: 1.4px;
 }
 
 /* Contact Section */

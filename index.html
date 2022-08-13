@@ -14,7 +14,7 @@
     <div class="container">
       <div class="navbar">
         <div class="navbar-brand">
-          <img src="./images/logo.svg" alt="logo" />
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
         </div>
         <nav class="navbar-nav">
           <!-- navbar nav brand for mobile -->
@@ -27,10 +27,10 @@
           </div>
 
           <ul>
-            <li><a href="#about-section">About Us</a></li>
-            <li><a href="#programmes-section">Programmes</a></li>
-            <li><a href="#timetable-section">Timetable</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#about-section">About Us</a></li>
+            <li><a class="nav-link" href="#programmes-section">Programmes</a></li>
+            <li><a class="nav-link" href="#timetable-section">Timetable</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="nav-toggle">
@@ -42,18 +42,18 @@
         <h1><i>"champions are made in the ring"</i></h1>
       </section>
       <div class="cta">
-        <a href="#" class="cta-button">Check Out What We Offer</a>
+        <a href="#programmes-section" class="cta-button nav-link">Check Out Our Programmes</a>
       </div>
       
     </div>
   </header>
 
   <div class="container" >
-    <section class="about-us">
+    <section class="about-us" id="about-section">
       <div class="img-box">
         <img class="about-image" src="./images/desktop/about-image.jpg" alt="about-us" />
         <div class="content-box">
-          <h2 class="heading-title" id="about-section">Box&Burn | Boxing Classes</h2>
+          <h2 class="heading-title">Box&Burn | Boxing Classes</h2>
           <p>
             At Box&Burn our mission is to provide provide the best
             boxing classes on offer. We eat, sleep and breathe boxing
@@ -77,10 +77,10 @@
             <br>
             <br>
             <br>
-            <div class="review">
+            <div class="review" >
               <i>"Love everything about Box&Burn. I've been going for three years
                 strong now. Seriously check it out if you want to challenge yourself!"</i>
-                <div class="move-right"><i>Rebecca</i></div>
+                <div class="move-right" ><i>Rebecca</i></div>
               </div>
             <br>
             <br>
@@ -105,7 +105,7 @@
             <img src="./images/desktop/boxfit.jpg" alt="image-boxfit" />
           </picture>
           <h3>boxfit</h3>
-          <a href="#" class="btn-summary">Book With Us</a>
+          <a class="btn-summary">Book With Us</a>
         </div>
 
         <div class="item">
@@ -115,7 +115,7 @@
             <img src="./images/desktop/fight-club.jpg" alt="image-fight-club" />
           </picture>
           <h3>fight club </h3>
-          <a href="#" class="btn-summary">Book With Us</a>
+          <a class="btn-summary">Book With Us</a>
         </div>
 
         <div class="item">
@@ -125,7 +125,7 @@
             <img src="./images/desktop/white-collar-boxing.jpg" alt="image-white-training" />
           </picture>
           <h3>white collar training</h3>
-          <a href="#" class="btn-summary">Book With Us</a>
+          <a class="btn-summary">Book With Us</a>
         </div>
 
         <div class="item">
@@ -135,7 +135,7 @@
             <img src="./images/desktop/strength-and-condition.jpg" alt="image-s&c" />
           </picture>
           <h3>strength and conditioning</h3>
-          <a href="#" class="btn-summary">Book With Us</a>
+          <a  class="btn-summary">Book With Us</a>
         </div>
 
         <div class="item">
@@ -145,7 +145,7 @@
             <img src="./images/desktop/one-to-one.jpg" alt="image-one-to-one" />
           </picture>
           <h3>one-to-one coaching</h3>
-          <a href="#" class="btn-summary">Book With Us</a>
+          <a class="btn-summary">Book With Us</a>
         </div>
       </div>
 
@@ -179,25 +179,25 @@
             <tr class="bg-black">
               <th scope="row">5pm - 6pm</th>
               <td><span>Boxfit</span></td>
-              <td><span>Strength and Conditioning</span></td>
+              <td><span>Strength & Conditioning</span></td>
               <td><span>Boxfit</span></td>
-              <td><span>Strength and Conditioning</span></td>
+              <td><span>Strength & Conditioning</span></td>
               <td><span>Boxfit</span></td>
             </tr>
             <tr class="bg-black">
               <th scope="row">6pm - 7pm</th>
               <td><span>White Collar Boxing</span></td>
               <td><span>White Collar Boxing</span></td>
-              <td><span>Strength and Conditioning</span></td>
+              <td><span>Strength & Conditioning</span></td>
               <td><span>White Collar Boxing</span></td>
               <td><span>Boxfit</span></td>
             </tr>
             <tr class="bg-black">
               <th scope="row">7pm - 8pm</th>
               <td><span>Boxfit</span></td>
-              <td><span>Strength and Conditioning</span></td>
+              <td><span>Strength & Conditioning</span></td>
               <td><span>Boxfit</span></td>
-              <td><span>Strength and Conditioning</span></td>
+              <td><span>Strength & Conditioning</span></td>
               <td><span>White Collar Boxing</span></td>
             </tr>
           </tbody>
@@ -245,15 +245,6 @@
           <div class="footer-brand">
             <a href=""><img src="./images/logo.svg" alt="logo" /></a>
           </div>
-
-          <div class="footer-nav">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Programmes</a></li>
-              <li><a href="#">Timetable</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
         </div>
 
         <div class="footer-right">
@@ -270,24 +261,8 @@
       </div>
     </div>
   </footer>
-  <script>
-    //Hamburger Navbar
-    const toggle = document.querySelector(".nav-toggle");
-    const navbar_nav = document.querySelector(".navbar-nav");
-    const hamburger = document.querySelector("#open-btn");
-    const close_btn = document.querySelector("#close-btn");
 
-    const navbarToggle = () => navbar_nav.classList.toggle("active");
-    hamburger.addEventListener("click", navbarToggle);
-    close_btn.addEventListener("click", navbarToggle);
-
-    //Sticky Navbar
-    window.addEventListener("scroll", function() {
-      const navbar = document.querySelector(".navbar");
-      navbar.classList.toggle("sticky", window.scrollY > 0)
-    })
-
-  </script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
