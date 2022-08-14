@@ -493,7 +493,12 @@ footer p {
 
     .timetable-small {
         visibility: visible;
+        text-align: center;
         color: #000;
+    }
+
+    .timetable-small p {
+        margin-top: 20px;
     }
 
     /* Footer */
