@@ -16,11 +16,14 @@ window.addEventListener("scroll", function () {
 
 //Smooth Scrolling
 const links = document.querySelectorAll(".nav-link");
+const cta = document.querySelector(".cta-button");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
   link.addEventListener("click", navbarToggle);
 }
+
+cta.addEventListener("click", clickHandler);
 
 function clickHandler(e) {
   e.preventDefault();
