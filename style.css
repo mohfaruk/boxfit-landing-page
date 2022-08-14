@@ -296,11 +296,15 @@ tbody th {
     border-top: 3px solid;
 }
 
-.bg-black td span {
+.bg-black td span, .bg-black span {
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=2E2E2E);
     margin: -2px -6px;
     padding:  8px  7px;
     color: #fff;
+}
+
+.timetable-small {
+    visibility: hidden;
 }
 
 /* Contact Section */
@@ -483,8 +487,13 @@ footer p {
     }
 
     /* Timetable */
-    .timetable {
-        font-size: 1rem;
+    .timetable table {
+        display: none;
+    }
+
+    .timetable-small {
+        visibility: visible;
+        color: #000;
     }
 
     /* Footer */
