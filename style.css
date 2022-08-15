@@ -6,7 +6,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* overflow-x:hidden; */
 }
 
 html,
@@ -60,14 +59,6 @@ h1 {
 }
 
 /* Header */
-header {
-    background: #0008 url(./images/desktop/banner-image.jpg) no-repeat center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    max-width: auto;
-    margin-bottom: var(--mb);
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -133,6 +124,34 @@ nav ul li:hover::after {
     padding-bottom: 30px;
 }
 
+header {
+    background: #0008 url(./images/desktop/banner-image.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    max-width: auto;
+    margin-bottom: var(--mb);
+}
+
+.cta {
+    display: flex;
+    justify-content: right;
+}
+
+.cta-button {
+    width: max-content;
+    padding: 12px 15px;
+    border: 3px solid var(--white);
+    color: var(--white);
+    transition: ease-in-out .3s;
+    margin-bottom: 50px;
+}
+
+.cta-button:hover {
+    font-style: italic;
+    color: var(--black);
+    background: var(--white);
+}
+
 /* About Us */
 .about-us {
     position: relative;
@@ -176,26 +195,6 @@ nav ul li:hover::after {
 
 .move-right {
     text-align: right;
-}
-
-.cta {
-    display: flex;
-    justify-content: right;
-}
-
-.cta-button {
-    width: max-content;
-    padding: 12px 15px;
-    border: 3px solid var(--white);
-    color: var(--white);
-    transition: ease-in-out .3s;
-    margin-bottom: 50px;
-}
-
-.cta-button:hover {
-    font-style: italic;
-    color: var(--black);
-    background: var(--white);
 }
 
 /* Programmes */
@@ -304,7 +303,7 @@ tbody th {
 }
 
 .timetable-small {
-    visibility: hidden;
+    display: none;
 }
 
 /* Contact Section */
@@ -382,16 +381,16 @@ footer p {
 .footer-link {
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 40px);
-    place-content: end;
+    grid-template-columns: repeat(3, 40px);
+    place-content: center;
 }
 
 .text-footer {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 /* Responsive for large desktop screen */
-
 @media screen and (max-width: 1630px) {
 
     /* About Us */
@@ -422,7 +421,6 @@ footer p {
 }
 
 /* Medium desktop screen */
-
 @media screen and (max-width: 992px) {
     :root {
         --fs-h1: 4.5em;
@@ -492,7 +490,7 @@ footer p {
     }
 
     .timetable-small {
-        visibility: visible;
+        display: block;
         text-align: center;
         color: #000;
     }
@@ -527,6 +525,7 @@ footer p {
 
 }
 
+/* Hamburger Navbar */
 @media screen and (min-width: 992px) {
     .mobile-nav-brand {
         display: none;
@@ -538,12 +537,10 @@ footer p {
     }
 }
 
-
-
-/* tablet */
+/* Tablet Sized Devices*/
 
 @media screen and (max-width: 768px) {
-
+    /* Amend Variables */
     :root {
         --fs-h1: 3.4em;
         --fs-h2: 2.8em;
@@ -554,14 +551,13 @@ footer p {
     .banner h1 {
         padding: 22px;
         border: hidden;
-
     }
 }
 
-
+/* Mobile Sized Devices */
 @media screen and (max-width: 375px) {
-
-
+    
+    /* Amend Variables */
     :root {
         --fs-h1: 2.3em;
         --fs-h2: 2em;
@@ -569,7 +565,7 @@ footer p {
         --mb: 50px;
     }
 
-    /* footer for responsive mobile*/
+    /* Footer */
     .footer-flex {
         flex-direction: column;
         text-align: center;
